@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        'module-name' // Replace 'module-name' with the actual module that Vite suggests externalizing
+        'build.rollupOptions.external'
       ]
     }
   }
