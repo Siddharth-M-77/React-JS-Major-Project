@@ -1,5 +1,6 @@
 import React from "react";
 import Sidenav from "./templates/Sidenav";
+import Topnav from "./templates/Topnav";
 
 const Home = () => {
   document.title = "SCSDB | MOVIE APP";
@@ -7,7 +8,10 @@ const Home = () => {
   return (
     <div className="w-full min-h-screen flex">
       <Sidenav />
-      <div className="w-[80%]  h-full"></div>
+      <div className="w-[80%] flex items-center justify-center  h-full">
+        <Topnav/>
+        
+      </div>
     </div>
   );
 };
