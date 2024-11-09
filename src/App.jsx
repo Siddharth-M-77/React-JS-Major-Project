@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="min-w-screen-2xl min-h-screen bg-[#1F1E24]">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
       </Routes>
     </div>
   );
