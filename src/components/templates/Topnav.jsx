@@ -8,8 +8,8 @@ const Topnav = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=4e17b926`);
-      setResults(response.data.Search || []); // Ensure there's a fallback in case of empty response
+      const response = await axios.get(`https://www.omdbapi.com/?s=${query}&apikey=4e17b926`);
+      setResults(response.data.Search || []);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
